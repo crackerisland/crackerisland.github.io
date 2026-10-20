@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hover swapping</title>
+  <style>
+    #myImage {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="myImage" src="original.jpg" alt="Hover Image">
+
+  <script>
+    const img = document.getElementById('myImage');
+
+    img.addEventListener('mouseenter', () => {
+      img.src = 'https://github.com/user-attachments/assets/e0910260-0cb6-44ba-b8cb-7bff76c6e4a1';
+    });
+
+    img.addEventListener('mouseleave', () => {
+      img.src = 'https://github.com/user-attachments/assets/aaf54e1a-4790-42e4-8612-0826a6bf4418';
+    });
+  </script>
+
+</body>
+</html>
